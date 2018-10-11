@@ -8391,6 +8391,6 @@ input#defaultChecked:after {
 
 /************* gf design css*********/
 
-.gfield_label{
-	background-color: red !important;fdefdfs
+.gform_wrapper .gfield_label{
+	color:#fff;
 }

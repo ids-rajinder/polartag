@@ -1,0 +1,79 @@
+/*
+ Theme Name:     Twenty Seventeen Child Theme
+ Theme URI:      https://wordpress.org/themes/twentyseventeen/
+ Description:    Twenty Seventeen Child Theme
+ Author:         the WordPress team
+ Author URI:     https://wordpress.org/
+ Template:       twentyseventeen
+ Version:        1.0.0
+*/
+ 
+/* Add Custom CSS after this line */
+
+
+.gform_wrapper li.gfield.ids-gf input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]), 
+.gform_wrapper select, .gform_wrapper li.gfield.ids-ids-gf textarea.medium, 
+.gform_wrapper li.gfield.ids-gf textarea.large,
+.gform_wrapper .top_label li.gfield.ids-gf div:not(.ginput_container_date) select.large, 
+.gform_wrapper .top_label li.gfield.ids-gf div:not(.ginput_container_date) select.medium,
+.gform_wrapper li.gfield.ids-gf textarea.medium  {
+    border: none;
+    width: 100%;
+    padding: 0.7em;
+    border-radius:0px;
+    padding-right: 45px;
+}
+.ids-gf img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 15px;
+}
+.ids-gf .ginput_container.ginput_container_date {
+    position: relative;
+}
+
+.site-content-contain{
+    background-color: #286090;
+
+}
+.gform_wrapper .top_label li.gfield.ids-gf.gf_left_half, 
+.gform_wrapper .top_label li.gfield.ids-gf.gf_right_half{
+    position: relative;
+}
+
+/***********for gf icon css************/ 
+.ids-gf.polar-icon .ginput_container.ginput_container_text:after,
+.ids-gf.polar-icon .ginput_container.ginput_container_email:after,
+.ids-gf.polar-icon .ginput_container.ginput_container_select:after {
+    position: absolute;
+    content: "\e008";
+    top: 52px;
+    right: 30px;
+    font-family: 'Glyphicons Halflings';
+    color: #32BFB7;
+}
+
+.ids-gf.polar-icon .ginput_container.ginput_container_email:after {
+    content: "\2709";
+
+}
+
+/***********for gf selecter icon css************/ 
+.ids-gf.polar-icon .ginput_container.ginput_container_select{
+    position: relative;
+    color:#666;
+}
+.ids-gf.polar-icon .ginput_container.ginput_container_select:after{
+    content: "\f0dd";
+    font: normal normal normal 25px/0 FontAwesome;
+    color: #fff;
+    background-color: #32BFB7;
+    width: auto;
+    padding: 30px 18px;
+    position: absolute;
+    top: 0;
+    right: -1px;
+
+}
+

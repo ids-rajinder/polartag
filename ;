@@ -1,0 +1,151 @@
+new files add # Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch master
+# Your branch is up to date with 'origin/master'.
+#
+# Changes to be committed:
+#	new file:   .gitignore
+#	new file:   README.md
+#	new file:   assets/js/custom1.js
+#	new file:   assets/js/custom2.js
+#	new file:   assets/js/libs/some.jquery.plugin.js
+#	new file:   assets/js/libs/some.jquery.plugin2.js
+#	new file:   assets/less/bootstrap/.csscomb.json
+#	new file:   assets/less/bootstrap/.csslintrc
+#	new file:   assets/less/bootstrap/alerts.less
+#	new file:   assets/less/bootstrap/badges.less
+#	new file:   assets/less/bootstrap/bootstrap.less
+#	new file:   assets/less/bootstrap/breadcrumbs.less
+#	new file:   assets/less/bootstrap/button-groups.less
+#	new file:   assets/less/bootstrap/buttons.less
+#	new file:   assets/less/bootstrap/carousel.less
+#	new file:   assets/less/bootstrap/close.less
+#	new file:   assets/less/bootstrap/code.less
+#	new file:   assets/less/bootstrap/component-animations.less
+#	new file:   assets/less/bootstrap/dropdowns.less
+#	new file:   assets/less/bootstrap/forms.less
+#	new file:   assets/less/bootstrap/glyphicons.less
+#	new file:   assets/less/bootstrap/grid.less
+#	new file:   assets/less/bootstrap/input-groups.less
+#	new file:   assets/less/bootstrap/jumbotron.less
+#	new file:   assets/less/bootstrap/labels.less
+#	new file:   assets/less/bootstrap/list-group.less
+#	new file:   assets/less/bootstrap/media.less
+#	new file:   assets/less/bootstrap/mixins.less
+#	new file:   assets/less/bootstrap/mixins/alerts.less
+#	new file:   assets/less/bootstrap/mixins/background-variant.less
+#	new file:   assets/less/bootstrap/mixins/border-radius.less
+#	new file:   assets/less/bootstrap/mixins/buttons.less
+#	new file:   assets/less/bootstrap/mixins/center-block.less
+#	new file:   assets/less/bootstrap/mixins/clearfix.less
+#	new file:   assets/less/bootstrap/mixins/forms.less
+#	new file:   assets/less/bootstrap/mixins/gradients.less
+#	new file:   assets/less/bootstrap/mixins/grid-framework.less
+#	new file:   assets/less/bootstrap/mixins/grid.less
+#	new file:   assets/less/bootstrap/mixins/hide-text.less
+#	new file:   assets/less/bootstrap/mixins/image.less
+#	new file:   assets/less/bootstrap/mixins/labels.less
+#	new file:   assets/less/bootstrap/mixins/list-group.less
+#	new file:   assets/less/bootstrap/mixins/nav-divider.less
+#	new file:   assets/less/bootstrap/mixins/nav-vertical-align.less
+#	new file:   assets/less/bootstrap/mixins/opacity.less
+#	new file:   assets/less/bootstrap/mixins/pagination.less
+#	new file:   assets/less/bootstrap/mixins/panels.less
+#	new file:   assets/less/bootstrap/mixins/progress-bar.less
+#	new file:   assets/less/bootstrap/mixins/reset-filter.less
+#	new file:   assets/less/bootstrap/mixins/resize.less
+#	new file:   assets/less/bootstrap/mixins/responsive-visibility.less
+#	new file:   assets/less/bootstrap/mixins/size.less
+#	new file:   assets/less/bootstrap/mixins/tab-focus.less
+#	new file:   assets/less/bootstrap/mixins/table-row.less
+#	new file:   assets/less/bootstrap/mixins/text-emphasis.less
+#	new file:   assets/less/bootstrap/mixins/text-overflow.less
+#	new file:   assets/less/bootstrap/mixins/vendor-prefixes.less
+#	new file:   assets/less/bootstrap/modals.less
+#	new file:   assets/less/bootstrap/navbar.less
+#	new file:   assets/less/bootstrap/navs.less
+#	new file:   assets/less/bootstrap/normalize.less
+#	new file:   assets/less/bootstrap/pager.less
+#	new file:   assets/less/bootstrap/pagination.less
+#	new file:   assets/less/bootstrap/panels.less
+#	new file:   assets/less/bootstrap/popovers.less
+#	new file:   assets/less/bootstrap/print.less
+#	new file:   assets/less/bootstrap/progress-bars.less
+#	new file:   assets/less/bootstrap/responsive-embed.less
+#	new file:   assets/less/bootstrap/responsive-utilities.less
+#	new file:   assets/less/bootstrap/scaffolding.less
+#	new file:   assets/less/bootstrap/tables.less
+#	new file:   assets/less/bootstrap/theme.less
+#	new file:   assets/less/bootstrap/thumbnails.less
+#	new file:   assets/less/bootstrap/tooltip.less
+#	new file:   assets/less/bootstrap/type.less
+#	new file:   assets/less/bootstrap/utilities.less
+#	new file:   assets/less/bootstrap/variables.less
+#	new file:   assets/less/bootstrap/wells.less
+#	new file:   assets/less/slices/base.less
+#	new file:   assets/less/style.less
+#	new file:   build/assests/Bird-Albatross-tag.jpg
+#	new file:   build/assests/Bird.jpg
+#	new file:   build/assests/King P.jpg
+#	new file:   build/assests/Penguin.jpg
+#	new file:   build/assests/Seal (2).jpg
+#	new file:   build/assests/Seal Ele stat tag2 .jpg
+#	new file:   build/assests/Seal fin clip 3.jpg
+#	new file:   build/assests/Seal sat tag.jpg
+#	new file:   build/assests/Seal satellite-relay_logger.jpg
+#	new file:   build/assests/Seal tag 5.jpg
+#	new file:   build/assests/Seal tag 6 cropped.jpg
+#	new file:   build/assests/Seal tail 1.jpg
+#	new file:   build/assests/Seal tail x2.jpg
+#	new file:   build/assests/Seal-blue-tags2.png
+#	new file:   build/assests/Seal-fish.jpg
+#	new file:   build/assests/Seal-sat-tag-2.jpg
+#	new file:   build/assests/Seal.jpg
+#	new file:   build/assests/Seal_W_Tag-3A.jpg
+#	new file:   build/assests/SkuaLone.jpg
+#	new file:   build/assests/Tagged-Pilot.jpg
+#	new file:   build/assests/Walrus 1.png
+#	new file:   build/assests/Walrus Four-types-of-transmitters.png
+#	new file:   build/assests/Walrus_Tak-on-tusk.jpg
+#	new file:   build/assests/Whale.jpg
+#	new file:   build/assests/Whale2.jpg
+#	new file:   build/assests/logo.png
+#	new file:   build/assests/shark.jpg
+#	new file:   build/assests/whale humpback tag.jpeg
+#	new file:   build/assests/whale-demo.jpg
+#	new file:   build/assests/whale3.jpg
+#	new file:   build/assests/whale4.jpg
+#	new file:   build/assests/whale5.jpg
+#	new file:   build/assests/z Seal tag x2.jpg
+#	new file:   build/assests/zSeal fin clip 2.jpg
+#	new file:   build/examples.css
+#	new file:   build/fonts/calibri.zip
+#	new file:   build/fonts/calibri/CALIBRIB.TTF
+#	new file:   build/fonts/calibri/CALIBRII.TTF
+#	new file:   build/fonts/calibri/CALIBRIZ.TTF
+#	new file:   build/fonts/calibri/Calibri.ttf
+#	new file:   build/fonts/calibri/sharefonts.net.txt
+#	new file:   build/fonts/muli.zip
+#	new file:   build/fonts/muli/Muli-Bold.ttf
+#	new file:   build/fonts/muli/Muli-BoldItalic.ttf
+#	new file:   build/fonts/muli/Muli-ExtraLight.ttf
+#	new file:   build/fonts/muli/Muli-ExtraLightItalic.ttf
+#	new file:   build/fonts/muli/Muli-Italic.ttf
+#	new file:   build/fonts/muli/Muli-Light.ttf
+#	new file:   build/fonts/muli/Muli-LightItalic.ttf
+#	new file:   build/fonts/muli/Muli-Semi-BoldItalic.ttf
+#	new file:   build/fonts/muli/Muli-SemiBold.ttf
+#	new file:   build/fonts/muli/Muli.ttf
+#	new file:   build/fonts/muli/SIL Open Font License.txt
+#	new file:   build/jquery.plugins.min.js
+#	new file:   build/plugin/fullpage/fullpage.css
+#	new file:   build/plugin/fullpage/fullpage.extensions.min.js
+#	new file:   build/scripts.min.js
+#	new file:   build/style.css
+#	new file:   gulpfile.js
+#	new file:   index - Copy.html
+#	new file:   index.html
+#	new file:   package-lock.json
+#	new file:   package.json
+#
