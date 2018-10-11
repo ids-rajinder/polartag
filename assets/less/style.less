@@ -1,0 +1,915 @@
+// Bootstrap
+@import 'bootstrap/bootstrap';
+
+// Base Styles#32BFB7
+@import 'slices/base.less'
+;
+
+@color:#000;
+@whitecolor:#fff;
+@iconcolor:#000; 
+@containerPadding : 60px;
+
+@font-face {
+    font-family: Muli-Bold;
+    src: url('build/fonts/calibri/Muli-Bold.ttf');
+}
+
+.width{
+    width: 100%;
+    float: left;
+}
+.selected{
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+.crosicon{
+    background-color: @whitecolor;
+    border: 3px solid @iconcolor;
+    color:@iconcolor;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: arial;
+    font-weight: bold;
+    position: absolute;
+    top:0px;
+    right:0px;
+    font-size: 15px;
+    line-height: 24px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin: 10px 10px;
+}
+
+.nav-sibebar{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: @whitecolor;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 30px;
+}
+
+.bordered {
+    border-top:2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+.icon{
+    color: @iconcolor;
+    padding: 0px 15px 0px 0px;
+    top: 3px;
+
+}
+.btn-custom{
+    background-color:@iconcolor;
+    color:@whitecolor;
+    font-size:1em; 
+    border:none;
+    border-radius: 20px;
+}
+ .font{
+    font-size:15px;
+    font-weight:bold;
+ }
+
+ .glyphicon {
+        color: @iconcolor;
+} 
+
+ .btn-default-submit(){
+    width: 100%;
+    border: 0;
+    background: @iconcolor;
+    color: @whitecolor;
+    height: 50px;
+
+    &:hover{
+        background: #286090;
+        color:@whitecolor;
+    }
+}
+
+/********* email text***********/
+.form-ids{
+    .width();   
+    background-color:#cdcdcec2;
+    padding: 25px;
+    border-radius: 28px;
+
+
+.ids-email{
+    .width();
+    .bordered();
+    .font(); 
+    text-align: left;
+    
+}
+.ids-email h4{
+    .font();
+    color:@color;
+    padding: 15px 0px;
+
+}
+
+input#email {
+    .font();
+    background:transparent;
+    border: none;
+    padding: 0;
+    color:@color;
+}
+input[type="email"]#email::-webkit-input-placeholder {
+  color:@color;
+}
+
+.form-sec{
+    .width();
+    .font();
+    color:@color;
+    padding: 50px 0;
+}
+}
+.custom-control{
+    .width();
+    .font();
+    text-align: left;
+    position: relative;
+    
+}
+.radio-main {
+
+    .width();
+    color:@color;
+    margin-top: 15px;
+}
+input[type=checkbox], input[type=radio] {
+    float: right;
+}
+.ids-btn{
+    .width();
+}
+
+.btn{
+    .btn-custom();
+    width: 80%;
+}
+.container-custom{
+    padding-top: @containerPadding;
+    padding-bottom: @containerPadding;
+    height:100%;
+    position: relative;
+}
+.ids-text{
+    .font();
+    text-align:left;
+    color: @whitecolor;
+    
+
+    h3{
+
+      padding: 2px 0px;
+
+    }
+}
+
+.nav-menu{
+    background-color: transparent;
+    border:none;
+}
+.navbar-default .navbar-collapse.navbar{
+    width: 100%;
+    border:none;
+}
+#menu .navbar ul.nav li {
+    margin: 0px;
+    border-radius: 0px;
+}
+
+
+/******for all section text top***********/
+.fp-tableCell{
+    vertical-align:top !important;
+}
+
+/**
+  *  Common classes
+  */
+.pos-static{
+    position: static;
+}
+.fh{
+    height: 100%;
+}
+.dtable{
+    display: table;
+    height: 100%;
+    width: 100%;
+
+    .dt-wrapper{
+
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
+.mob-text{
+    display:none;
+}
+
+// Select Div
+.selectdiv {
+    position: relative;
+    float: left;
+    width: 100%;
+    height:50px;
+
+  &:after {
+
+        content: '\f0dd';
+        font: normal normal normal 17px/1 FontAwesome;
+        right:0px;
+        top:0px;
+        height:50px;
+        padding:15px 15px;
+        position: absolute;
+        pointer-events: none;
+        background-color:@iconcolor;   
+
+  }
+
+  select{
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      display: block;
+      width: 100%;
+      height: 50px;
+      float: right;
+      padding: 0px 24px;
+      font-size: 14px;
+      line-height: 1.75;
+      color: gray;
+      background-color:@whitecolor;
+      background-image: none;
+      border:0;
+      -ms-word-break: normal;
+      word-break: normal;
+      font-weight: normal;
+  }
+    &::-ms-expand {
+        display: none;
+    }
+}
+
+
+// Form Field CSS
+
+@formIconWidth: 50px;
+@inputHeight: 50px;
+
+.form-group {
+
+    position: relative;
+
+    &.has-icon{
+
+        .form-control{
+            padding-right: @formIconWidth + 12px;
+        }
+
+    }    
+
+    .form-control {
+
+        height: @inputHeight;
+        border: 0;
+        border-radius: 0px;
+    }   
+
+    .icon-form {
+
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        right: 0;
+        height: 100%;
+        width: @formIconWidth;
+        text-align: center;
+        line-height: @inputHeight;
+
+        .glyphicon {
+
+            color: @iconcolor;
+        } 
+    }    
+}
+
+/*
+ * Home Page first section
+ */
+
+.first-section{
+     
+    .slide-1-bg {
+
+        background-image: url('assests/whale-demo.jpg');
+        background-position: left bottom;
+        background-size: cover;
+    }
+
+    .ids-text h2 {
+
+        margin-bottom: 12px;
+    }
+    .lower-text {
+
+        bottom: @containerPadding;
+        left: 0px;
+        position: absolute; 
+    }
+
+    .polor-pad {
+
+        margin-top:15px;
+    }
+}
+
+/*
+ * Home Page second section
+ */
+
+.second-section {
+
+    .slide-2-bg {
+
+        background-image: url('assests/shark.jpg');
+        background-position: left bottom;
+        background-size: cover;
+    }
+    .head-title {
+
+        .font();
+        text-align: left;
+        color:@whitecolor;
+    }
+
+    .form-group {
+
+        margin-bottom: 15px;
+        text-align: left;
+        width: 100%;
+        float:left;
+    }
+
+    .main-center {
+
+        margin-top: 10px;
+        background: transparent;
+        color: @whitecolor;
+    }
+
+    button.btn-default.submit-btn {
+
+        .btn-default-submit();
+
+    }
+
+    select.select-drop {
+
+       width: 100%;
+       color: #000;
+       border: 0;
+    }
+
+    .label-text {
+
+        font-size:15px;
+        font-weight:inherit;
+
+        h4{
+            font-size:15px;
+            font-weight:inherit; 
+        }
+    }
+
+    .ids-label {
+
+        text-align: left;
+        padding-bottom: 10px;
+    }
+
+    .ids-label2 {
+
+        visibility: hidden;
+        padding-bottom: 10px;
+    }
+    .text-area {
+
+        .width();
+        margin-bottom: 15px;
+    }
+
+    .custom-select select { 
+
+        display: none; 
+    }
+
+    .select-selected {
+
+        background-color:@whitecolor;
+
+        &:after {
+
+            .selected();
+        }
+
+        .select-arrow-active:after {
+
+            border-color: transparent transparent #fff transparent;
+            top: 7px;
+
+        }
+    }
+        .select-items div:after {
+            content: "\f192";
+            position: absolute;
+            right: 0;
+            font: normal normal normal 17px/1 FontAwesome;
+            padding: 10px 10px;
+        }
+
+        .single-img {
+
+            border: 4px solid @whitecolor;
+        }
+}
+
+
+
+/*
+ * Home Page third section
+ */
+
+.third-section {
+
+    .slide-3-bg {
+
+        background-image: url('assests/whale5.jpg');
+        background-position: left bottom;
+        background-size: cover;
+    }
+
+       .head-title {
+
+        .font();
+        text-align: left;
+        color:@whitecolor;
+    }
+
+    .form-group {
+
+        margin-bottom: 15px;
+        text-align: left;
+        width: 100%;
+        float:left;
+    }
+
+    .main-center {
+
+        margin-top: 10px;
+        background: transparent;
+        color: @whitecolor;
+    }
+
+    button.btn-default.submit-btn {
+
+        .btn-default-submit();
+
+        &:hover{
+            background: #286090;
+            color:@whitecolor;
+        }
+    }
+
+    select.select-drop {
+
+       width: 100%;
+       color: #000;
+       border: 0;
+    }
+
+    .label-text {
+
+        font-size:15px;
+        font-weight:inherit;
+
+        h4 {
+            font-size:15px;
+            font-weight:inherit; 
+        }
+
+    }
+
+    .ids-label {
+
+        text-align: left;
+        padding-bottom: 10px;
+    }
+
+    .text-area {
+
+        .width();
+        margin-bottom: 15px;
+    }
+
+    .single-img {
+
+        border: 4px solid @whitecolor;
+    }
+
+    .custom-select select {
+
+        display: none; 
+    }
+
+    .select-selected {
+
+        background-color:@whitecolor;
+
+
+        &:after {
+
+            .selected();
+        }
+
+        .select-arrow-active:after {
+            border-color: transparent transparent #fff transparent;
+            top: 7px;
+        }
+    }
+
+    .select-items div:after {
+
+        content: "\f192";
+        position: absolute;
+        right: 0;
+        font: normal normal normal 17px/1 FontAwesome;
+        padding: 10px 10px;
+    }
+}
+
+/** ******** for select option css**********/
+
+.select-items div,
+.select-selected {
+
+  color: #000;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+  font-size: 15px;
+}
+
+.select-items {
+
+  position: absolute;
+  background-color:@whitecolor;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.select-hide {
+
+  display: none;
+}
+.select-items div:hover, .same-as-selected {
+
+  background-color:@iconcolor;
+  color: @whitecolor!important;
+}
+
+
+/*
+ * Home Page fourth section
+ */
+
+.fourth-section {
+
+    .slide-4-bg {
+
+        background-image: url('assests/whale4.jpg');
+        background-position: left bottom;
+        background-size: cover;
+    }
+
+    .grid-img {
+
+        height: 300px; 
+        position: relative;
+        transition: .5s ease-in-out;
+       
+
+        img {
+
+            max-height: 100%;  
+            max-width: 100%; 
+            width: auto;
+            height: auto;
+            position: absolute;  
+            top: 0;  
+            bottom: 0;  
+            left: 0;  
+            right: 0;  
+            margin: auto;
+            transition: .5s ease-in-out;
+
+            &:hover {
+
+               transform: scale(0.9);
+               transition: .5s ease-in-out;
+            }
+
+        }
+        
+    }
+
+    .img-container {
+
+        border:1px solid @whitecolor;
+        margin-bottom: 25px;
+        padding: 10px;
+        background: @whitecolor;
+    }
+
+    .grid-text {
+        text-align: left;
+        font-size: 15px;
+    }
+
+}
+
+/*
+ * for comment icon css
+ */
+
+i.glyphicon.glyphicon-glyphicon-comment.com-icon:hover {
+
+    transform: scale(1.2);
+    transition: .5s ease-in-out;
+}
+
+i.glyphicon.glyphicon-glyphicon-comment.com-icon {
+
+    transition: .5s ease-in-out;
+}
+
+/*
+ * About Page
+ */
+.required {
+
+    color:red;
+}
+label.hide-text {
+
+    visibility: hidden;
+}
+
+.sidenav {
+
+    .nav-sibebar();
+
+    a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: @iconcolor;
+        display: block;
+        transition: 0.3s;
+
+        &:hover {
+            color: #f1f1f1;
+        }
+    }
+
+    .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+}
+
+
+.ids-about {
+
+    width: 100%;
+    float:left; 
+    margin: 25px 0;
+    color:@color;
+
+    h3 {
+
+      padding: 15px 0;
+    }
+
+    p {
+
+        font-size: 12px;
+        line-height: 25px;
+        text-align: justify;
+    }
+}
+
+/*
+ * comment pop up
+ */
+
+ .hover_bkgr_fricc {
+
+    background:rgba(0,0,0,.4);
+    cursor:pointer;
+    display:none;
+    height:100%;
+    position: absolute;
+    text-align:center;
+    top:0;
+    width:100%;
+    z-index:10000;
+
+    .helper {
+
+        display:inline-block;
+        height:100%;
+        vertical-align:middle;
+    }
+
+    > div {
+        background-color:@whitecolor;
+        box-shadow: 10px 10px 60px #555;
+        display: inline-block;
+        height: auto;
+        max-width: 1200px;
+        vertical-align: middle;
+        width: 60%;
+        position: relative;
+        padding: 15px 5%;
+    }
+}
+
+.popupCloseButton {
+
+    .crosicon();
+
+    &:hover {
+
+        background-color: @iconcolor;
+        color: @whitecolor;
+    }
+}
+
+.trigger_popup_fricc {
+
+    cursor: pointer;
+}
+
+.lib-panel {
+
+    margin-bottom: 20Px;
+
+    img {
+        width: 100%;
+        background-color: transparent;
+    }
+
+    .lib-row {
+
+        padding: 0 20px 0 20px;
+    }
+
+    .lib-header {
+
+        background-color: @whitecolor;
+        font-size: 20px;
+        padding: 10px 20px 0 20px;
+        text-align:left;
+
+        .lib-header-seperator {
+            height: 2px;
+            width: 26px;
+            background-color: @iconcolor;
+            margin: 7px 0 7px 0;
+        }
+    }
+
+    .lib-row.lib-desc {
+
+        font-size: 15px;
+        text-align:left;
+    }
+
+}
+
+.row-margin-bottom {
+
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.box-shadow {
+
+    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,.10);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.10);
+}
+
+/******
+
+popup img on hover
+
+*********/
+img.popup-hov{
+   
+    transition: .5s ease-in-out;
+}
+
+img.popup-hov:hover {
+    transform: scale(.9);
+    transition: .5s ease-in-out;
+}
+
+
+/******
+
+form icon sec-first
+
+*********/
+
+input.custom-control-input:after{
+
+    content: "\f10c";
+    position: absolute;
+    right: 0;
+    font: normal normal normal 17px/1 FontAwesome;
+    padding: 1px 0px 0 0;
+    top: 0;
+    color:@iconcolor;
+}
+input#defaultChecked:after{
+    content: "\f096";
+
+}
+
+@media only screen and (max-width :767px) {
+
+    .ids-text h2 {
+        font-size: 25px;
+    }
+    .dtable .dt-wrapper {
+        display: inherit;
+    }
+    .logo-main {
+        position: relative;
+    }
+    .pull-left.logo-space {
+        position: absolute;
+        z-index: 1;
+        left: 42%;
+    }
+    .logo-space img{
+        width: 70px;
+    }
+    .mob-text{
+        display:block;;
+        margin-top: 12px;
+    }
+    .desktop-text{
+        display: none;
+    }
+
+    /******.navbar-collapse.navbar.mob-nav {
+        text-align: left;
+        background-color: @iconcolor;
+        width: auto;
+        padding-left: 2em;
+    }*****/
+
+}
+

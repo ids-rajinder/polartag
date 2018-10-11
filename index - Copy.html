@@ -1,0 +1,839 @@
+<!doctype html>
+<!--[if lt IE 7 ]><html itemscope itemtype="https://schema.org/" id="ie6" class="ie" lang="en-US"><![endif]-->
+<!--[if IE 7 ]>   <html itemscope itemtype="https://schema.org/" id="ie7" class="ie" lang="en-US"><![endif]-->
+<!--[if IE 8 ]>   <html itemscope itemtype="https://schema.org/" id="ie8" class="ie" lang="en-US"><![endif]-->
+<!--[if IE 9 ]>   <html itemscope itemtype="https://schema.org/" id="ie9" class="ie" lang="en-US"><![endif]-->
+<!--[if gt IE 9]><!--><html itemscope itemtype="https://schema.org/" lang="en-US"><!--<![endif]-->
+<head>
+
+    <meta charset="utf-8">
+    <!--
+                                     /$$               /$$
+                                    | $$              | $$
+      /$$$$$$$  /$$$$$$$  /$$$$$$  /$$$$$$    /$$$$$$$| $$$$$$$  /$$   /$$
+     /$$_____/ /$$_____/ /$$__  $$|_  $$_/   /$$_____/| $$__  $$| $$  | $$
+    |  $$$$$$ | $$      | $$  \ $$  | $$    | $$      | $$  \ $$| $$  | $$
+     \____  $$| $$      | $$  | $$  | $$ /$$| $$      | $$  | $$| $$  | $$
+     /$$$$$$$/|  $$$$$$$|  $$$$$$/  |  $$$$/|  $$$$$$$| $$  | $$|  $$$$$$$
+    |_______/  \_______/ \______/    \___/   \_______/|__/  |__/ \____  $$
+                                                                 /$$  | $$
+                                                                |  $$$$$$/
+                                                                 \______/
+                                     /$$               /$$
+                                    | $$              | $$
+      /$$$$$$$  /$$$$$$$  /$$$$$$  /$$$$$$    /$$$$$$$| $$$$$$$
+     /$$_____/ /$$_____/ /$$__  $$|_  $$_/   /$$_____/| $$__  $$
+    |  $$$$$$ | $$      | $$  \ $$  | $$    | $$      | $$  \ $$
+     \____  $$| $$      | $$  | $$  | $$ /$$| $$      | $$  | $$
+     /$$$$$$$/|  $$$$$$$|  $$$$$$/  |  $$$$/|  $$$$$$$| $$  | $$
+    |_______/  \_______/ \______/    \___/   \_______/|__/  |__/
+
+
+
+                                     /$$               /$$
+                                    | $$              | $$
+      /$$$$$$$  /$$$$$$$  /$$$$$$  /$$$$$$    /$$$$$$$| $$$$$$$
+     /$$_____/ /$$_____/ /$$__  $$|_  $$_/   /$$_____/| $$__  $$
+    |  $$$$$$ | $$      | $$  \ $$  | $$    | $$      | $$  \ $$
+     \____  $$| $$      | $$  | $$  | $$ /$$| $$      | $$  | $$
+     /$$$$$$$/|  $$$$$$$|  $$$$$$/  |  $$$$/|  $$$$$$$| $$  | $$
+    |_______/  \_______/ \______/    \___/   \_______/|__/  |__/
+    -->
+    <title>Gulp Starter with Less ♥ Scotch</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- ICONS - THANKS A LOT APPLE... -->
+    <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="https://scotch.io/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="https://scotch.io/wp-content/themes/thirty/img/icons/favicon-57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://scotch.io/wp-content/themes/thirty/img/icons/favicon-57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://scotch.io/wp-content/themes/thirty/img/icons/favicon-72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://scotch.io/wp-content/themes/thirty/img/icons/favicon-114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://scotch.io/wp-content/themes/thirty/img/icons/favicon-120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://scotch.io/wp-content/themes/thirty/img/icons/favicon-144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://scotch.io/wp-content/themes/thirty/img/icons/favicon-152.png">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="application-name" content="Scotch Scotch scotch">
+    <meta name="msapplication-TileImage" content="https://scotch.io/wp-content/themes/thirty/img/icons/favicon-144.png">
+    <meta name="msapplication-TileColor" content="#2A2A2A">
+
+    <!-- SEARCH -->
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <link rel="canonical" href="">
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:creator" content="">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image:src" content="">
+
+    <!-- FACEBOOK -->
+    <meta property="og:site_name" content="">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="fb:app_id" content="">
+    <meta property="fb:admins" content="">
+
+    <!-- G+ -->
+    <meta itemprop="name" content="">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="">
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="build/style.css">
+    <link rel="stylesheet" href="build/examples.css">
+    <link rel="stylesheet" href="build/plugin/fullpage/fullpage.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+  
+   
+</head>
+<body>
+    <nav class="navbar navbar-default nav-menu" id="menu">
+        <div class="container">
+            <!-------<div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+               
+            </div>----->
+            <div id="navbar" class="navbar-collapse navbar collapse mob-nav">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" onclick="openNav()">About</a></li>
+                </ul>
+                <div id="mySidenav" class="sidenav">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                  <div class="col-sm-12">
+                    <div class="ids-about">
+                      <h3>About ReportTag</h3>
+                      <p>ReportTag was set up as a portal aimed specifically
+                          at the polar tourism industry in an attempt to collect
+                          images of animal tags. However photo submittions
+                          are welcome from anyone. We will share the data
+                          that comes from your photos with collaborating
+                          scientists. </p>
+                    </div>
+
+                    <div class="ids-about">
+                      <h3>Contact us</h3>
+                      <p>You can contact ReportTag at admin@ReportTag.com.
+                          If you have any questions, just send us an
+                          email.</p>
+                    </div>
+
+                    <div class="ids-about">
+                      <h3>Terms and Conditions:</h3>
+                      <p>Disclaimer of Warranty; Limitation of Liability By
+                          submitting images and data to ReportTag, you agree
+                          to our Terms of Use in support of our goal of creating
+                          a better understanding of polar wildlife. We seek to
+                          make the data in ReportTag as open as possible,
+                          while respecting the intellectual property of all
+                          contributors. Your images will be passed on to third
+                          party</p>
+
+                      <p>Privacy - Your email will not be disclosed to anyone.
+                          ReportTag does not provide any public search
+                          function, catalogue or listing to find transfers that
+                          would be available. Please read the Terms of Service
+                          carefully. If you use our Services, you agree to the
+                          Terms of Service, NTD Policy and Privacy Statement. </p>
+                    </div>
+                  </div>
+
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+<div id="myContainer">
+
+    <div class="section first-section" id="section1">
+       
+      <div class="fh slide-1-bg">
+        <div class="container-custom container fh">
+
+           <div class="row fh">
+              <div class="col-sm-6 col-xs-12 pos-static ">
+
+                <div class="row">
+                  <!-- Logo -->
+                  <div class="col-lg-12 logo-main">
+                    <div class="pull-left logo-space">
+                      <img src="build/assests/logo.png">
+                    </div>
+                  </div>
+
+                  <!-- Home Page Text -->
+                  <div class="col-sm-6 col-xs-12 lower-text">
+                      <div class="ids-text pull-left desktop-text">
+                          <h2>Do you have a photo of an animal Tag?</h2>
+                          <h3>You can help science by submitting your<br/>
+                          photo here and we will notify the tag owner.</h3>
+                      </div>
+                  </div>
+                </div>
+
+              </div>
+                
+                <div class="col-sm-5  col-xs-12 col-md-offset-1 fh">
+                  <div class="dtable">
+                    <div class="dt-wrapper">
+                      <div class="form-ids">
+                          <div class="form-sec">
+                              <h2><i class="fa fa-plus-circle icon" aria-hidden="true"></i>Add Your images</h2>
+                          </div>
+                          <div class="ids-email">
+                             <input type="email" class="form-control" id="email" placeholder="Your email">
+                          </div>
+                          <div class="radio-main">
+                              <div class="custom-control custom-radio">
+                                  <label class="custom-control-label" for="defaultUnchecked">Metadata detected</label>
+                                  <input type="radio" class="custom-control-input" id="" name="defaultExampleRadios">
+                                    
+                              </div>
+
+                              <div class="custom-control custom-radio">
+                                  <label class="custom-control-label" for="defaultChecked">No photo to submit,just comment</label>
+                                  <input type="radio" class="custom-control-input" id="" name="defaultExampleRadios" checked>
+                              </div>
+
+                              <div class="custom-control custom-radio polor-pad">
+                                  <label class="custom-control-label" for="defaultChecked">Default checked</label>
+                                  <input type="checkbox" class="custom-control-input" id="defaultChecked" name="defaultExampleRadios" check>
+                              </div>
+                          </div>
+
+                          <div class="ids-btn">
+                              <button type="button" class="btn btn-primary btn-lg btn">Submit</button>
+                          </div>
+                          <!------------for mobile-------------------->
+                            <div class="ids-text pull-left mob-text">
+                                  <h2>Do you have a photo of an animal Tag?</h2>
+                                  <h3>You can help science by submitting your
+                                  photo here and we will notify the tag owner.</h3>
+                            </div>
+                           <!------------for mobile  end-------------------->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+           </div>
+        </div>                 
+      </div>
+       
+    </div>
+
+
+
+
+    <div class="section second-section" id="section2">
+        <div class="fh slide-2-bg">
+          <div class="container-custom container">
+            <div class="second-section fh">
+              <div class="row fh dt-wrapper">
+    
+                  <div class="col-sm-5 main-login main-center fh">
+                    <div class="dtable">
+                      <div class="dt-wrapper">
+                        <div class="single-img">
+                          <img src="build/assests/Seal-fish.jpg" class="img-responsive">
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="col-sm-7 fh">
+                    <div class="dtable">
+                      <div class="dt-wrapper">
+                        <div class="head-title label-text">
+                          <h2>Metadata detected:</h2>
+
+                          <h4>(Note: auto-entered data read from image metadata. Please change if incorrect.)</h4>
+                        </div>
+
+                        <div class="main-login main-center">
+                          <form action="">
+                            <div class="row">
+                              <div class="col-sm-6">
+                                 <h5 class="ids-label"><span class="required">*</span> Mandatory fields</h5>
+                                <div class="form-group has-icon email-pos">
+                                  <input type="text" class="form-control h" id="name" placeholder="Name">
+                                  <div class="icon-form">
+                                    <span class="glyphicon glyphicon-user"></span>
+                                  </div>
+                                </div>
+                                <div class="form-group has-icon email-pos">
+                                  <input type="email" class="form-control" id="email" placeholder="Email">
+                                  <div class="icon-form">
+                                   <span class="glyphicon glyphicon-envelope"></span>
+                                 </div>
+                                </div>
+                                <div class="form-group label-text">
+                                   <label for="pwd">Lattitude:</label>
+                                  <input type="text" class="form-control" id="Lattitude:">
+                                </div>
+
+                                <div class="form-group label-text">
+                                   <label for="pwd">Longitude:</label>
+                                  <input type="text" class="form-control" id="Longitude::">
+                                </div>
+                                <div class="form-group has-icon label-text">
+                                  <label for="pwd">Date of Resighting:</label>
+                                  <div class='input-group date' id='datetimepicker5'>
+                                    <input type='text' class="form-control" />
+                                    <span class="input-group-addon">
+                                      <span class="glyphicon glyphicon-calendar"></span>
+                                    </span>
+                                  </div>
+                                </div>
+                                <button type="submit" class="btn-default submit-btn">Submit</button>
+                              </div>
+
+                               <div class="col-sm-6">
+                                  <div class="form-group">
+                                     <h5 class="ids-label2"><span class="required">*</span> Mandatory fields</h5>
+                                    <div class="selectdiv custom-select">
+                                       
+                                            <select>
+                                                <option selected>Site</option>
+                                                <option>Site</option>
+                                                <option>Site</option>
+                                                <option>Site</option>
+                                            </select>
+                                      </div>
+                                  </div>
+
+                                  <div class="form-group">
+                                    <div class="selectdiv custom-select">
+                                            <select>
+                                                <option selected>Area</option>
+                                                <option>Antarctic Peninsula</option>
+                                                <option>South Georgia</option>
+                                                <option>Falkland Islands</option>
+                                            </select>
+                                      </div>
+                                  </div>
+
+                                  <div class="form-group">
+                                    <input type="text" class="form-control" id="Species:" placeholder="Species">
+                                  </div>
+                                  <div class="text-area">
+                                    <div class="ids-area">
+                                      <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="14" placeholder="Comment/describe location"></textarea>
+                                    </div>
+                                 </div>
+
+                               </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="section third-section" id="section3">
+            <div class="fh slide-3-bg">
+             <div class="container-custom container">
+            <div class="third-section fh">
+              <div class="row fh dt-wrapper">
+    
+                  <div class="col-sm-5 main-login main-center fh">
+                    <div class="dtable">
+                      <div class="dt-wrapper">
+                        <div class="single-img">
+                          <img src="build/assests/Seal-sat-tag-2.jpg" class="img-responsive">
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="col-sm-7 fh">
+                    <div class="dtable">
+                      <div class="dt-wrapper">
+                        <div class="head-title label-text">
+                          <h2>Metadata detected:</h2>
+                          <h4>(Note: auto-entered data read from image metadata. Please change if incorrect.)</h4>
+                         
+                        </div>
+
+                        <div class="main-login main-center">
+                          <form action="">
+                            <div class="row">
+                              <div class="col-sm-6">
+                                 <h5 class="ids-label"><span class="required">*</span> Mandatory fields</h5>
+                                <div class="form-group has-icon email-pos">
+                                  
+                                  <input type="text" class="form-control" id="name" placeholder="Name">
+                                  <div class="icon-form">
+                                    <span class="glyphicon glyphicon-user"></span>
+                                  </div>
+                                </div>
+                                <div class="form-group has-icon email-pos">
+                                  <input type="email" class="form-control" id="email" placeholder="Email">
+                                  <div class="icon-form">
+                                   <span class="glyphicon glyphicon-envelope"></span>
+                                 </div>
+                                </div>
+                                <div class="form-group label-text">
+                                   <div style="width: 100%"><iframe width="100%" height="300" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=Pathankot+(software%20development)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/create-google-map/">Google Maps iframe generator</a></iframe></div>
+                                   <h4>Pick location from the map</h4>
+                                </div>
+
+                                <div class="form-group has-icon label-text">
+                                  <label for="pwd">Date of Resighting:</label>
+                                  <div class='input-group date' id='datetimepicker5'>
+                                    <input type='text' class="form-control" />
+                                    <span class="input-group-addon">
+                                      <span class="glyphicon glyphicon-calendar"></span>
+                                    </span>
+                                  </div>
+                                </div>
+                        
+                              </div>
+
+                               <div class="col-sm-6">
+                                  <div class="form-group">
+                                    <h5 class="ids-label"><span class="required"></span>Site:</h5>
+                                    <div class="selectdiv custom-select">
+                                            <select>
+                                                <option selected>Cuverville</option>
+                                                <option>Site</option>
+                                                <option>Site</option>
+                                                <option>Site</option>
+                                            </select>
+                                      </div>
+                                  </div>
+
+                                  <div class="form-group">
+                                    <h5 class="ids-label"><span class="required"></span>Area:</h5>
+                                    <div class="selectdiv custom-select">
+                                            <select>
+                                                <option selected>Antarctic Peninsula</option>
+                                                <option>South Georgia</option>
+                                                <option>Falkland Islands</option>
+                                            </select>
+                                      </div>
+                                  </div>
+
+                                  <div class="form-group label-text">
+                                    <label for="pwd">Lattitude:</label>
+                                    <input type="text" class="form-control" id="Lattitude:">
+                                  </div>
+
+                                  <div class="form-group label-text">
+                                    <label for="pwd">Longitude:</label>
+                                    <input type="text" class="form-control" id="Longitude:">
+                                  </div>
+
+                                  <div class="form-group">
+                                   
+                                    <input type="text" class="form-control" id="Species:" placeholder="Species">
+                                  </div>
+                                  <div class="text-area">
+                                    <div class="ids-area">
+                                      <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="5" placeholder="Comment/describe location"></textarea>
+                                    </div>
+                                 </div>
+
+                                  <button type="submit" class="btn-default submit-btn">
+                                    <span>Submit</span></button>
+                               </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+            </div>     
+    </div>
+    
+    <div class="section fourth-section" id="section4">
+        <div class="fh slide-4-bg">
+        <!-------------pop up ----------------->
+          <div class="hover_bkgr_fricc">
+            <span class="helper"></span>
+            <div class="pop">
+            <div class="popupCloseButton">X</div>
+              <div class="row row-margin-bottom">
+                  <div class="col-md-12 no-padding lib-item" data-category="view">
+                      <div class="lib-panel">
+                          <div class="row box-shadow">
+                              <div class="col-md-6">
+                                 <img src="build/assests/Bird.jpg" class="img-responsive popup-hov">
+                              </div>
+                              <div class="col-md-6">
+                                  <div class="lib-row lib-header">
+                                      Jhon Smith
+                                      <div class="lib-header-seperator"></div>
+                                  </div>
+                                  <div class="lib-row lib-desc">
+
+                                      <div class="grid-text">
+                                          <span><strong>Species:</strong> Arctic Tern</span><br>
+                                          <span><strong>Location:</strong> Enterprise Island</span><br>
+                                          <span><strong>Description:</strong></span>
+                                      </div>
+
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <!-------------pop up end ----------------->
+
+          <div class="container-custom container">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div class="img-container">
+                      <div class="grid-img">
+                        <img src="build/assests/Bird.jpg" class="img-responsive">
+                      </div>
+                      <div class="grid-text">
+                          <span><strong>By:</strong>Jhon Smith</span><br>
+                          <span><strong>Species:</strong>Arctic Tern</span><br>
+                          <span><strong>Location:</strong>Enterprise Island</span>
+                          <div class="pull-right">
+                            <a class="trigger_popup_fricc" href="#"><i class="glyphicon glyphicon-glyphicon-comment com-icon" data-unicode="e111"></i></a>
+                          </div>
+                      </div>
+
+
+                    </div> 
+                  </div>
+
+                  <div class="col-sm-4">
+                    <div class="img-container">
+                      <div class="grid-img">
+                        <img src="build/assests/Tagged-Pilot.jpg" class="img-responsive">
+                      </div>
+                      <div class="grid-text">
+                        <span><strong>By:</strong>Jhon Smith</span><br>
+                        <span><strong>Species:</strong>Pilot Whale</span><br>
+                        <span><strong>Location:</strong>Gerlache Strait</span>
+                        <div class="pull-right com-icon">
+                            <a class="trigger_popup_fricc" href="#"><i class="glyphicon glyphicon-glyphicon-comment com-icon" data-unicode="e111"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="img-container">
+                      <div class="grid-img">
+                        <img src="build/assests/Seal-sat-tag-2.jpg" class="img-responsive">
+                      </div>
+
+                      <div class="grid-text">
+                        <span><strong>By:</strong>Jare Smith</span><br>
+                        <span><strong>Species:</strong>Weddll Seal</span><br>
+                        <span><strong>Location:</strong>Andvers Island</span>
+                        <div class="pull-right com-icon">
+                            <a class="trigger_popup_fricc" href="#"><i class="glyphicon glyphicon-glyphicon-comment com-icon" data-unicode="e111"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="img-container">
+                        <div class="grid-img">
+                          <img src="build/assests/Whale2.jpg" class="img-responsive">
+                        </div>
+
+                        <div class="grid-text">
+                        <span><strong>By:</strong>John Doe</span><br>
+                        <span><strong>Species:</strong>Pilot Whale</span><br>
+                        <span><strong>Location:</strong>Gerlache Strat</span>
+                        <div class="pull-right com-icon">
+                            <a class="trigger_popup_fricc" href="#"><i class="glyphicon glyphicon-glyphicon-comment com-icon" data-unicode="e111"></i></a>
+                        </div>
+                      </div>
+                      </div> 
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="img-container">
+                        <div class="grid-img">
+                          <img src="build/assests/Seal-blue-tags2.png" class="img-responsive">
+                        </div>
+                        <div class="grid-text">
+                        <span><strong>By:</strong>John Smith</span><br>
+                        <span><strong>Species:</strong>Pilot Whale</span><br>
+                        <span><strong>Location:</strong>Ross Sea</span>
+                        <div class="pull-right com-icon">
+                           <a class="trigger_popup_fricc" href="#"><i class="glyphicon glyphicon-glyphicon-comment com-icon" data-unicode="e111"></i></a>
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="img-container">
+                        <div class="grid-img">
+                          <img src="build/assests/Bird-Albatross-tag.jpg" class="img-responsive">
+                        </div>
+                        <div class="grid-text">
+                        <span><strong>By:</strong>Jane Smith</span><br>
+                        <span><strong>Species:</strong>Weddell Seal</span><br>
+                        <span><strong>Location:</strong>Andvers Island</span>
+                        <div class="pull-right com-icon">
+                            <a class="trigger_popup_fricc" href="#"><i class="glyphicon glyphicon-glyphicon-comment com-icon" data-unicode="e111"></i></a>
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+        </div>
+    </div>
+</div>
+<input type="hidden" id="_4" value="3" />
+
+
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="build/jquery.plugins.min.js"></script>
+    <script src="build/plugin/fullpage/fullpage.extensions.min.js"></script>
+  
+
+<script type="text/javascript">
+
+// Initializing fullpage.js
+// initialize(false);
+
+function initialize(hasScrollBar){
+    new fullpage('#myContainer', {
+        anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage'],
+        menu: '#menu',
+        slidesNavigation: true,
+        parallax: true,
+        parallaxKey: 'YWx2YXJvdHJpZ28uY29tXzlNZGNHRnlZV3hzWVhnPTFyRQ==',
+        parallaxOptions: {
+            type: 'reveal',
+            percentage: 62,
+            property: 'translate'
+        },
+        scrollingSpeed: 1000,
+        autoScrolling: true,
+        scrollBar: hasScrollBar,
+        fitToSection:true
+    });
+}
+
+
+var fullPageElement = null;
+
+function callFullPage(){
+
+  var breakPointHeight = 500;
+  var breakPointWidth  = 767;
+
+  if(fullPageElement !== null){
+    fullPageElement.destroy('all');    
+  }
+
+
+  if( jQuery(window).height() < breakPointHeight  ||  jQuery(window).width() < breakPointWidth ){
+     console.log('Diable plugin');
+
+     return;
+  }
+
+  fullPageElement = new fullpage('#myContainer', {
+    licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+    anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage'],
+    menu: '#menu',
+    slidesNavigation: true,
+    parallax: true,
+    parallaxKey: 'YWx2YXJvdHJpZ28uY29tXzlNZGNHRnlZV3hzWVhnPTFyRQ==',
+    parallaxOptions: {
+        type: 'reveal',
+        percentage: 62,
+        property: 'translate'
+    },
+    scrollingSpeed: 1000,
+    autoScrolling: true,
+    scrollBar: false,
+    fitToSection:true
+  });
+
+
+  console.log('Larger screen');
+}
+
+jQuery(window).ready(callFullPage);
+//jQuery(window).resize(callFullPage);
+
+
+//utils
+function addClass(item, className) {
+    if (item.classList){
+        item.classList.add(className);
+    }
+    else{
+      item.className += ' ' + className;
+    }
+    return item;
+}
+
+function removeClass(item, className){
+    if (item.classList){
+        item.classList.remove(className);
+    }
+    else{
+        item.className = item.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
+    }
+    return item;
+}
+
+function index(item, selector) {
+    var children = item.parentNode.childNodes;
+    var num = 0;
+    for (var i=0; i<children.length; i++) {
+         if (children[i] == item) return num;
+         if (children[i].nodeType==1) num++;
+    }
+    return -1;
+}
+
+
+ // $(function ($) {
+ //  $('#datetimepicker5').datetimepicker({
+ //    defaultDate: "11/1/2013",
+ //      disabledDates: [
+ //        moment("12/25/2013"),
+ //          new Date(2013, 11 - 1, 21),
+ //            "11/22/2013 00:53"
+ //      ]
+ //    });
+ //  })(jQuery);
+
+ function openNav() {
+    document.getElementById("mySidenav").style.width = "360px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
+var x, i, j, selElmnt, a, b, c;
+/*look for any elements with the class "custom-select":*/
+x = document.getElementsByClassName("custom-select");
+for (i = 0; i < x.length; i++) {
+  selElmnt = x[i].getElementsByTagName("select")[0];
+  /*for each element, create a new DIV that will act as the selected item:*/
+  a = document.createElement("DIV");
+  a.setAttribute("class", "select-selected");
+  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+  x[i].appendChild(a);
+  /*for each element, create a new DIV that will contain the option list:*/
+  b = document.createElement("DIV");
+  b.setAttribute("class", "select-items select-hide");
+  for (j = 0; j < selElmnt.length; j++) {
+    /*for each option in the original select element,
+    create a new DIV that will act as an option item:*/
+    c = document.createElement("DIV");
+    c.innerHTML = selElmnt.options[j].innerHTML;
+    c.addEventListener("click", function(e) {
+        /*when an item is clicked, update the original select box,
+        and the selected item:*/
+        var y, i, k, s, h;
+        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+        h = this.parentNode.previousSibling;
+        for (i = 0; i < s.length; i++) {
+          if (s.options[i].innerHTML == this.innerHTML) {
+            s.selectedIndex = i;
+            h.innerHTML = this.innerHTML;
+            y = this.parentNode.getElementsByClassName("same-as-selected");
+            for (k = 0; k < y.length; k++) {
+              y[k].removeAttribute("class");
+            }
+            this.setAttribute("class", "same-as-selected");
+            break;
+          }
+        }
+        h.click();
+    });
+    b.appendChild(c);
+  }
+  x[i].appendChild(b);
+  a.addEventListener("click", function(e) {
+      /*when the select box is clicked, close any other select boxes,
+      and open/close the current select box:*/
+      e.stopPropagation();
+      closeAllSelect(this);
+      this.nextSibling.classList.toggle("select-hide");
+      this.classList.toggle("select-arrow-active");
+    });
+}
+function closeAllSelect(elmnt) {
+  /*a function that will close all select boxes in the document,
+  except the current select box:*/
+  var x, y, i, arrNo = [];
+  x = document.getElementsByClassName("select-items");
+  y = document.getElementsByClassName("select-selected");
+  for (i = 0; i < y.length; i++) {
+    if (elmnt == y[i]) {
+      arrNo.push(i)
+    } else {
+      y[i].classList.remove("select-arrow-active");
+    }
+  }
+  for (i = 0; i < x.length; i++) {
+    if (arrNo.indexOf(i)) {
+      x[i].classList.add("select-hide");
+    }
+  }
+}
+/*if the user clicks anywhere outside the select box,
+then close all select boxes:*/
+document.addEventListener("click", closeAllSelect);
+
+$(window).load(function () {
+    $(".trigger_popup_fricc").click(function(){
+       $('.hover_bkgr_fricc').show();
+    });
+
+    $('.hover_bkgr_fricc').click(function(){
+        $('.hover_bkgr_fricc').hide();
+    });
+    $('.popupCloseButton').click(function(){
+        $('.hover_bkgr_fricc').hide();
+    });
+});
+</script>
+
+
+
+</body>
+</html>
